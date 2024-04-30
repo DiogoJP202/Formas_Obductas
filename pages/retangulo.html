@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página da forma: Círculo</title>
+    <link rel="stylesheet" href="../assets/css/mobile.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <style>
+        .formas > .forma > .formaGeometrica{
+            border-radius: 0 !important;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            height: 75px;
+            width: 120px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../index.html">< Voltar</a>
+        <div id="logo"></div>
+    </header>
+    <main>
+        <h2>FORMA SELECiONADA:</h2>
+       <h1>CÍRCULO</h1>
+       <div class="formas">
+           <div class="forma">
+                <div class="formaGeometrica"></div>
+           </div>
+        </div>
+        <h2>Informações Básicas:</h2>
+        <p>Semelhante ao quadrado, mas com lados adjacentes de comprimentos diferentes. O retângulo é uma forma prática e onipresente.</p>
+        <p>Para calcular sua <span class="rosa">área</span>, <span class="azul">multiplique</span> o <span class="rosa">comprimento</span> pela <span class="rosa">largura</span>. O <span class="rosa">perímetro</span> é a <span class="azul">soma</span> de todos os seus lados, ou duas vezes a soma do <span class="rosa">comprimento</span> com a <span class="rosa">largura</span>.</p>
+        <p>Mas e se eu te dissesse que a proporção entre seu comprimento e largura pode ser mágica? A proporção áurea, uma constante matemática que aparece em vários fenômenos naturais, tem sido atribuída a retângulos com proporções específicas. Coincidência ou uma conexão mais profunda com a natureza?</p>
+        <form>
+            <h2>
+                Calcular Área do <br>
+                <span class="azul">Retângulo</span>
+            </h2>
+            <label for="Icomprimento">Tamanho em centímetros do comprimento:</label>
+            <br>
+            <input type="number" id="Icomprimento" placeholder="Exemplo: 100" required>
+            <br>
+            <label for="Ilargura">Tamanho em centímetros da largura:</label>
+            <br>
+            <input type="number" id="Ilargura" placeholder="Exemplo: 100" required>
+            <br>
+            <input type="submit" value="CALCULAR">
+            <input type="reset" value="LIMPAR">
+        </form>
+    </main>
+    <footer>
+        <p>Site desenvolvido por <a href="https://github.com/diogojp202">&copy; Diogo Antonny</a>.</p>
+    </footer>
+    <script src="../assets/js/script.js" type="module"></script>
+    <script src="../assets/js/retangulo.js" type="module"></script>
+</body>
+</html>

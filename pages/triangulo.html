@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página da forma: Círculo</title>
+    <link rel="stylesheet" href="../assets/css/mobile.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <style>
+        .formas > .forma > .formaGeometrica{
+            width: 0; 
+            height: 0;
+            background-color: #00000000 !important;
+            border: 0;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent; 
+            border-bottom: 90px solid var(--color3);
+            border-radius: 0 !important;
+        }
+
+        .formas > .forma > .formaGeometrica::after{
+            content: "";
+            width: 0; 
+            height: 0; 
+            position: relative;
+            left: -45px;
+            top: -15px;
+            border-left: 45px solid transparent;
+            border-right: 45px solid transparent;
+            border-bottom: 82px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../index.html">< Voltar</a>
+        <div id="logo"></div>
+    </header>
+    <main>
+        <h2>FORMA SELECiONADA:</h2>
+       <h1>CÍRCULO</h1>
+       <div class="formas">
+           <div class="forma">
+                <div class="formaGeometrica"></div>
+           </div>
+        </div>
+        <h2>Informações Básicas:</h2>
+        <p>Uma forma com três lados, cada um guardando segredos diferentes. O triângulo é um dos alicerces da geometria.</p>
+        <p>Sua <span class="rosa">área</span> pode ser <span class="azul">calculada</span> usando a <span class="rosa">base</span> e a <span class="rosa">altura</span>: meio da base <span class="azul">multiplicado</span> pela <span class="rosa">altura</span>. Seu perímetro é a <span class="azul">soma</span> de todos os seus <span class="rosa">lados</span>.</p>
+        <p>Mas, e o que dizer do triângulo dos Illuminati? Ou dos triângulos que aparecem nas lendas antigas? A geometria dos triângulos pode ser tanto um instrumento para a compreensão do espaço quanto uma fonte de mitos e mistérios.</p>
+        <form>
+            <h2>
+                Calcular Área do <br>
+                <span class="azul">Triângulo</span>
+            </h2>
+            <label for="Icomprimento">Tamanho em centímetros da base:</label>
+            <br>
+            <input type="number" id="Icomprimento" placeholder="Exemplo: 100" required>
+            <br>
+            <label for="Ilargura">Tamanho em centímetros da altura:</label>
+            <br>
+            <input type="number" id="Ilargura" placeholder="Exemplo: 100" required>
+            <br>
+            <label for="Ilados">Tamanho em centímetros dos lados superiores:</label>
+            <br>
+            <input type="number" id="Ilados" placeholder="Exemplo: 100" required>
+            <br>
+            <input type="submit" value="CALCULAR">
+            <input type="reset" value="LIMPAR">
+        </form>
+    </main>
+    <footer>
+        <p>Site desenvolvido por <a href="https://github.com/diogojp202">&copy; Diogo Antonny</a>.</p>
+    </footer>
+    <script src="../assets/js/script.js" type="module"></script>
+    <script src="../assets/js/triangulo.js" type="module"></script>
+</body>
+</html>

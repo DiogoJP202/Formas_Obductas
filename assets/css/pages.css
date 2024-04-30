@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@import url("mobile.css");
+
+header{
+    align-items: center;
+}
+
+header a{
+    text-decoration: none;
+    color: var(--color1);
+    vertical-align: middle;
+    font-size: 1.5em;
+}
+
+main h2{
+    background-color: #00000000;
+    color: var(--color1);
+    font-size: 2em;
+}
+
+main h1{
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    font-size: 2em;
+}
+
+main h1::before, main h1::after{
+    display: none;
+}
+
+main .formas .forma{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+main .formas .forma::before{
+    content: ">";
+    position: relative;
+    top: -10px;
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+    font-size: 5em;
+    color: var(--color3);
+    vertical-align: middle;
+    background-color: #00000000;
+    animation: beatingArrow .5s alternate-reverse infinite;
+}
+
+main .formas .forma::after{
+    content: "<";
+    position: relative;
+    top: -10px;
+    width: auto;
+    height: auto;
+    margin-left: 10px;
+    font-size: 5em;
+    color: var(--color3);
+    vertical-align: middle;
+    background-color: #00000000;
+    animation: beatingArrow .5s alternate-reverse infinite;
+}
+
+@keyframes beatingArrow {
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.25);
+    }
+}
+
+main p{
+    max-width: 800px;
+    margin: auto;
+    padding: 10px;
+    color: #fff;
+    text-indent: 10px;
+    font-size: 1.2em;
+}
+
+.azul{
+    color: var(--color3);
+}
+
+.rosa{
+    color: var(--color1);
+}
+
+form{
+    margin: 20px;
+    text-align: center;
+}
+
+form > h2{
+    margin: 10px;
+}
+
+form label{
+    color: #fff;
+}
+
+form > input[type="number"]{
+    width: 80%;
+    max-width: 300px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1em;
+    border: 2px solid var(--color1);
+}
+
+form input[type="submit"], form input[type="reset"]{
+    width: 150px;
+    max-width: 125px;
+    margin: 10px;
+    font-size: 1em;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--color2);
+    border: 3px solid var(--color1);
+    border-radius: 15px;
+    box-shadow: -2px 2px 4px #000;
+    transition: transform .5s ease-in-out;
+}
+
+form input[type="reset"]{ border-color: var(--color3)}
+
+form input[type="submit"]:hover, form input[type="reset"]:hover{ transform: scale(1.1); }
+
+form .resultado{
+    background-color: #fff;
+    padding: 5px;
+    border: 2px solid var(--color3);
+    border-radius: 10px;
+}
