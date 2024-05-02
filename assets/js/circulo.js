@@ -1,6 +1,6 @@
 import createDivResult from "./modules/createDivResult.js";
-
 const form = document.querySelector("form");
+window.onresize = () => location.reload();
 
 form.addEventListener("submit", e => {
     e.preventDefault();

@@ -3,9 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cubo</title>
+    <title>Página da forma: Cubo</title>
+    <link rel="stylesheet" href="../assets/css/mobile.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <style>
+        .formas{ z-index: 1; }
+        .face { background-color: #000; }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">< Voltar</a>
+        <div id="logo"></div>
+    </header>
+    <main>
+        <h2>FORMA SELECiONADA:</h2>
+       <h1>Cubo</h1>
+       <div class="formas">
+           <div class="forma">
+            <div class="cube">
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="face front"></div>
+                <div class="face back"></div>
+              </div>
+           </div>
+        </div>
+        <h2>Informações Básicas:</h2>
+        <p>Uma forma tridimensional composta por seis quadrados idênticos. O cubo é uma estrutura que pode parecer inofensiva, mas é uma figura fundamental para a compreensão do espaço tridimensional.</p>
+        <p>Para <span class="azul">calcular</span> sua <span class="rosa">área</span> total, você <span class="azul">multiplica</span> a <span class="rosa">área</span> de um dos quadrados por seis. Para o <span class="rosa">volume</span>, basta <span class="azul">elevar</span> o <span class="rosa">lado</span> ao cubo.</p>
+        <p>Curiosamente, o cubo é a base de muitos brinquedos famosos, como o cubo mágico, que desafia mentes ao redor do mundo a desvendar seu segredo. Será que seu design simples guarda um poder oculto?</p>
+        <form>
+            <h2>
+                Calcular Área do <br>
+                <span class="azul">Cubo</span>
+            </h2>
+            <label for="Iarea">Tamanho em centímetros da área de uma face:</label>
+            <br>
+            <input type="number" id="Iarea" placeholder="Exemplo: 100" required>
+            <br>
+            <label for="Iaresta">Tamanho em centímetros das arestas do cubo:</label>
+            <br>
+            <input type="number" id="Iaresta" placeholder="Exemplo: 100" required>
+            <br>
+            <input type="submit" value="CALCULAR">
+            <input type="reset" value="LIMPAR">
+        </form>
+    </main>
+    <footer>
+        <p>Site desenvolvido por <a href="https://github.com/diogojp202">&copy; Diogo Antonny</a>.</p>
+    </footer>
+    <script src="../assets/js/script.js" type="module"></script>
+    <script src="../assets/js/cubo.js" type="module"></script>
 </body>
 </html>

@@ -3,9 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esfera</title>
+    <title>Página da forma: Esfera</title>
+    <link rel="stylesheet" href="../assets/css/mobile.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <style>
+        .fundo{
+            display: none;
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">< Voltar</a>
+        <div id="logo"></div>
+    </header>
+    <main>
+        <h2>FORMA SELECiONADA:</h2>
+       <h1>Esfera</h1>
+       <div class="formas">
+            <div class="forma">
+                <div class="fundo"></div>
+                <div class="container">
+                    <!-- X Axis -->
+                    <div class="circle border"></div>
+                    <div class="circle border"></div>
+                    <div class="circle border"></div>
+                    <div class="circle border"></div>
+                    <div class="circle border"></div>
+                    <!-- Y Axis -->
+                    <div class="circle border"></div>
+                    <div class="circle border"></div>
+                    <div class="circle border"></div>
+                    <div class="circle border"></div>
+                    <div class="circle border"></div>
+                    <!-- Z Axis -->
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </div>
+        <h2>Informações Básicas:</h2>
+        <p>A perfeição em três dimensões. A esfera é uma forma tão perfeita que até mesmo a natureza a usa para construir planetas e estrelas.</p>
+        <p>Para calcular sua <span class="rosa">área</span>, <span class="azul">multiplique</span> quatro por <span class="rosa">pi</span> pelo raio <span class="azul">ao quadrado</span>. Para o volume, é quatro terços de <span class="rosa">pi</span> pelo <span class="rosa">raio</span> ao <span class="rosa">cubo</span>.</p>
+        <p>A esfera tem sido um símbolo de perfeição e harmonia ao longo da história. Mas há algo mais? Por que ela é tão prevalente no cosmos e na imaginação humana ?</p>
+        <form>
+            <h2>
+                Calcular Área do <br>
+                <span class="azul">Esfera</span>
+            </h2>
+            <label for="Iraio">Tamanho em centímetros do raio da esfera:</label>
+            <br>
+            <input type="number" id="Iraio" placeholder="Exemplo: 100" required>
+            <br>
+            <input type="submit" value="CALCULAR">
+            <input type="reset" value="LIMPAR">
+        </form>
+    </main>
+    <footer>
+        <p>Site desenvolvido por <a href="https://github.com/diogojp202">&copy; Diogo Antonny</a>.</p>
+    </footer>
+    <script src="../assets/js/script.js" type="module"></script>
+    <script src="../assets/js/esfera.js" type="module"></script>
 </body>
 </html>

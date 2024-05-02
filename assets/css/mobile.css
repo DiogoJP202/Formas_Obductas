@@ -296,15 +296,6 @@ main > .formas{
     50% { transform: rotateY(360deg) rotateX(360deg) rotateZ(0deg); }
     100% { transform: rotateY(720deg) rotateX(720deg) rotateZ(360deg); }
 }
-
-
-  
-.container:nth-child(1) {
-    width: 200px;
-    height: 200px;
-    perspective: 500px;
-    margin: 100px;
-}
   
 .cube {
     display: flex;

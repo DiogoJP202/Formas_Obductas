@@ -6,11 +6,10 @@ form.addEventListener("submit", e => {
     e.preventDefault();
 
     const numberInputs = document.querySelectorAll("input[type='number']");
-    const base = parseFloat(numberInputs[0].value);
-    const altura = parseFloat(numberInputs[1].value);
-    const lados = parseFloat(numberInputs[2].value);
+    const comprimento = parseFloat(numberInputs[0].value);
+    const areaT = Math.sqrt(3) * (comprimento ** 2) * 4;
 
-    const area = `A área é equivalente à ${((base * altura) / 2).toFixed(2)}cm e seu perímetro é de ${(base + (lados * 2)).toFixed(2)}cm.`;
+    const area = `A área é equivalente à ${(areaT).toFixed(2)}cm e seu volume é de ${((areaT * Math.sqrt(2)) / 12).toFixed(2)}cm.`;
 
     createDivResult(form, area);
 })

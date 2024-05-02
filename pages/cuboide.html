@@ -3,9 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuboide</title>
+    <title>Página da forma: Cuboide</title>
+    <link rel="stylesheet" href="../assets/css/mobile.css">
+    <link rel="stylesheet" href="../assets/css/pages.css">
+    <style>
+        .formas{ z-index: 1; }
+
+        .face { background-color: #000; }
+
+        #cuboide .left{
+            width: 75px;
+        }
+
+        #cuboide .right{
+            width: 75px;
+        }
+
+        #cuboide .top{
+            height: 75px;
+        }
+
+        #cuboide .bottom{
+            height: 75px;
+        }
+
+        #cuboide .front{
+            transform: translateZ(37px);
+        }
+
+        #cuboide .back{
+            transform: translateZ(-37px)
+        }
+    </style>
 </head>
 <body>
-    
+    <header>
+        <a href="../index.html">< Voltar</a>
+        <div id="logo"></div>
+    </header>
+    <main>
+        <h2>FORMA SELECiONADA:</h2>
+       <h1>Cuboide</h1>
+       <div class="formas">
+           <div class="forma">
+            <div class="cube" id="cuboide">
+                <div class="face top"></div>
+                <div class="face bottom"></div>
+                <div class="face left"></div>
+                <div class="face right"></div>
+                <div class="face front"></div>
+                <div class="face back"></div>
+              </div>
+           </div>
+        </div>
+        <h2>Informações Básicas:</h2>
+        <p>Uma variação do cubo, com seis faces retangulares. O cuboide é a forma de muitos objetos do cotidiano, como caixas e edifícios.</p>
+        <p>Sua <span class="rosa">área</span> total é a <span class="azul">soma</span> das <span class="rosa">áreas</span> de todos os seus <span class="rosa">lados</span>, enquanto seu <span class="rosa">volume</span> é o <span class="azul">produto</span> do <span class="rosa">comprimento</span>, <span class="rosa">largura</span> e <span class="rosa">altura</span>.</p>
+        <p>Mas você já percebeu que muitos prédios altos compartilham essa forma? Será que é apenas pela estabilidade ou há algo mais por trás do design cúbico ?</p>
+        <form>
+            <h2>
+                Calcular Área do <br>
+                <span class="azul">Cuboide</span>
+            </h2>
+            <label for="Icomprimento">Tamanho em centímetros do comprimento:</label>
+            <br>
+            <input type="number" id="Icomprimento" placeholder="Exemplo: 100" required>
+            <br>
+            <label for="Ilargura">Tamanho em centímetros da largura:</label>
+            <br>
+            <input type="number" id="Ilargura" placeholder="Exemplo: 100" required>
+            <br>
+            <label for="Ialtura">Tamanho em centímetros da altura:</label>
+            <br>
+            <input type="number" id="Ialtura" placeholder="Exemplo: 100" required>
+            <br>
+            <input type="submit" value="CALCULAR">
+            <input type="reset" value="LIMPAR">
+        </form>
+    </main>
+    <footer>
+        <p>Site desenvolvido por <a href="https://github.com/diogojp202">&copy; Diogo Antonny</a>.</p>
+    </footer>
+    <script src="../assets/js/script.js" type="module"></script>
+    <script src="../assets/js/cuboide.js" type="module"></script>
 </body>
 </html>
