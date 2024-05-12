@@ -1,5 +1,5 @@
-# Refúgio Radiante⠀⠀⠀⠀⠀                                                 
-## Projeto de lading page sobre uma ong ficticia.
+# Formas Obductas⠀⠀⠀⠀⠀                                                 
+## Projeto de site web que calcula formas Geométricas.
 
 ![image](https://github.com/DiogoJP202/Formas_Obductas/assets/102389309/fff1e0ff-c1e1-42c4-84c7-5feda7778652)
 ![image](https://github.com/DiogoJP202/Formas_Obductas/assets/102389309/286b4a3e-1d5b-4251-9c8a-74526e889d1d)
